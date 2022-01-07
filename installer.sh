@@ -10,8 +10,8 @@ echo '/_/_//_/___/\__/\_,_/_/_/\__/_/'
 echo " "
 
 echo "Installing dependencies..."
-sudo apt install wget unzip -y &>/dev/null
-sudo pacman -S wget unzip --noconfirm &>/dev/null
+sudo apt install bash wget unzip -y &>/dev/null
+sudo pacman -S bash wget unzip --noconfirm &>/dev/null
 echo "All dependencies are now installed"
 
 echo "Downloading MariaDownloader..."
