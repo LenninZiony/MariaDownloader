@@ -30,7 +30,7 @@ then
 
   mkdir ~/MariaDownloader 2>/dev/null
   mkdir ~/MariaDownloader/$mariadownloader_file 2>/dev/null
-  cd ~/MariaDownloader/$maraiadownloader_file 2>/dev/null
+  cd ~/MariaDownloader/$mariadownloader_file 2>/dev/null
     
     echo "Mariadownloading..."
     wget "$mariadownloader_url" -O $mariadownloader_file &>/dev/null
