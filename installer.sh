@@ -15,10 +15,11 @@ sudo pacman -S wget unzip --noconfirm &>/dev/null
 echo "All dependencies are now installed"
 
 echo "Downloading MariaDownloader..."
+sudo rm -rf /tmp/mariadownloader >/dev/null
 wget https://raw.githubusercontent.com/LenninZiony/MariaDownloader/main/bin/mariadownloader -O /tmp/mariadownloader &>/dev/null
 sudo chown root:root /tmp/mariadownloader
 sudo chmod 755 /tmp/mariadownloader
-sudo rm /bin/mariadownloader
+sudo rm -rf /bin/mariadownloader >/dev/null
 sudo cp /tmp/mariadownloader /bin/mariadownloader
 sudo rm /tmp/mariadownloader
-echo "MariaDownloader was installed!"
+echo "MariaDownloader was installed"
