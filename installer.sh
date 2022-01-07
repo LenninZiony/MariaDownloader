@@ -18,5 +18,6 @@ echo "Downloading MariaDownloader"
 wget https://raw.githubusercontent.com/LenninZiony/MariaDownloader/main/bin/mariadownloader -O /tmp/mariadownloader &>/dev/null
 sudo chown root:root /tmp/mariadownloader
 sudo chmod 755 /tmp/mariadownloader
-sudo mv /tmp/mariadownloader /bin/mariadownloader
+sudo cp /tmp/mariadownloader /bin/mariadownloader
+sudo rm /tmp/mariadownloader
 echo "MariaDownloader was installed"
