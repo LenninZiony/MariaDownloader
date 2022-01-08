@@ -8,34 +8,33 @@ echo " "
 
 read -p "File URL: " mariadownloader_url
 read -p "File name: " mariadownloader_file
+read -p "Directory to save: " mariadownloader_directory
 read -p "Unzip the file? [Y/n] " mariadownloader_unzip
 
 if [[ "$mariadownloader_unzip" =~ (y|Y|yes|Yes|YES) ]]
 then
 
-  mkdir ~/MariaDownloader 2>/dev/null
-  mkdir ~/MariaDownloader/$mariadownloader_file 2>/dev/null
-  cd ~/MariaDownloader/$mariadownloader_file 2>/dev/null
+  mkdir $mariadownloader_directory 2>/dev/null
+  cd $mariadownloader_directory
 
     echo "Mariadownloading..."
-    wget "$mariadownloader_url" -O $mariadownloader_file &>/dev/null
+    wget "$mariadownloader_url" -O $mariadownloader_file
     echo "Mariadownloaded!"
       echo "Unzipping..."
       unzip $mariadownloader_file &>/dev/null
       echo "Unzipped!"
-      echo "Saved under /home/$(whoami)/MariaDownloader/$mariadownloader_file/"
+      echo "Saved under $mariadownloader_directory"
 
 elif [[ "$mariadownloader_unzip" =~ (n|N|no|No|NO) ]]
 then
 
-  mkdir ~/MariaDownloader 2>/dev/null
-  mkdir ~/MariaDownloader/$mariadownloader_file 2>/dev/null
-  cd ~/MariaDownloader/$mariadownloader_file 2>/dev/null
+  mkdir $mariadownloader_directory 2>/dev/null
+  cd $mariadownloader_directory 2>/dev/null
     
     echo "Mariadownloading..."
-    wget "$mariadownloader_url" -O $mariadownloader_file &>/dev/null
+    wget "$mariadownloader_url" -O $mariadownloader_file
     echo "Mariadownloaded!"
-    echo "Saved under /home/$(whoami)/MariaDownloader/$mariadownloader_file/"
+    echo "Saved under $mariadownloader_directory"
     
 else
   echo "Error"
