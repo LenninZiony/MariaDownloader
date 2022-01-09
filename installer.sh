@@ -19,7 +19,7 @@ if [[ "$mdver" =~ (2|python|PYTHON) ]]
 then
   echo "Installing dependencies..."
   sudo apt install python3 pip -y
-  sudo pacman -S python3 pip --noconfirm
+  sudo pacman -S python3 python-pip --noconfirm
   pip install wget
   echo "All dependencies are now installed"
 
