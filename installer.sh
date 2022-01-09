@@ -11,8 +11,8 @@ echo " "
 
 echo "What MariaDownloader version would you like to install?
 >Shell (recommended) [1]
->Python (currently under development) [2]
-"
+>Python (currently under development) [2]"
+
 read -p "1 or 2? " mdver
 
 if [[ "$mdver" =~ (2|python|PYTHON) ]]
