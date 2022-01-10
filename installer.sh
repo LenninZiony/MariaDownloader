@@ -1,20 +1,20 @@
-echo '   __  ___         _      ___                  __             __'
-echo '  /  |/  /__ _____(_)__ _/ _ \___ _    _____  / /__  ___ ____/ /__ ____'
-echo ' / /|_/ / _ `/ __/ / _ `/ // / _ \ |/|/ / _ \/ / _ \/ _ `/ _  / -_) __/'
-echo '/_/  /_/\_,_/_/ /_/\_,_/____/\___/__,__/_//_/_/\___/\_,_/\_,_/\__/_/'
-echo '   _          __       ____'
-echo '  (_)__  ___ / /____ _/ / /__ ____'
-echo ' / / _ \(_-</ __/ _ `/ / / -_) __/'
-echo '/_/_//_/___/\__/\_,_/_/_/\__/_/'
-echo " "
+echo '
+   __  ___         _      ___                  __             __
+  /  |/  /__ _____(_)__ _/ _ \___ _    _____  / /__  ___ ____/ /__ ____
+ / /|_/ / _ `/ __/ / _ `/ // / _ \ |/|/ / _ \/ / _ \/ _ `/ _  / -_) __/
+/_/  /_/\_,_/_/ /_/\_,_/____/\___/__,__/_//_/_/\___/\_,_/\_,_/\__/_/
+   _          __       ____
+  (_)__  ___ / /____ _/ / /__ ____
+ / / _ \(_-</ __/ _ `/ / / -_) __/
+/_/_//_/___/\__/\_,_/_/_/\__/_/'
 
-echo "What MariaDownloader version would you like to install?"
-echo ">Shell (recommended) [1]"
-echo ">Python (currently under development) [2]"
+echo "What MariaDownloader version would you like to install?
+>Python (RECOMMENDED) [2]
+>Shell [2]"
 
 read -p "1 or 2? " mdver
 
-if [[ "$mdver" =~ (2|python|PYTHON) ]]
+if [[ "$mdver" =~ (1|python|PYTHON) ]]
 then
   echo "Installing dependencies..."
   sudo apt install python3 pip -y
@@ -33,7 +33,7 @@ then
   echo "The python version of MariaDownloader was installed"
   
 
-elif [[ "$mdver" =~ (1|shell|SHELL) ]]
+elif [[ "$mdver" =~ (2|shell|SHELL) ]]
 then
 
   echo "Installing dependencies..."
