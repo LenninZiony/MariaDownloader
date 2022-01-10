@@ -12,11 +12,11 @@ git clone https://github.com/LenninZiony/MariaDownloader &>/dev/null && chmod +x
 ```
 ### Wget
 ```
-wget -O- https://raw.githubusercontent.com/LenninZiony/MariaDownloader/main/installer.sh &>/dev/null | bash
+sh -c "$(wget -O- https://raw.githubusercontent.com/LenninZiony/MariaDownloader/main/installer.sh)"
 ```
 ### Curl
 ```
-curl https://raw.githubusercontent.com/LenninZiony/MariaDownloader/main/installer.sh &>/dev/null | bash
+sh -c "$(curl https://raw.githubusercontent.com/LenninZiony/MariaDownloader/main/installer.sh)"
 ```
 
 ![installer](https://user-images.githubusercontent.com/80495420/148483269-f35b0eba-1149-4240-9947-ce5d7f3c38f6.png)
