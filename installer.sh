@@ -9,9 +9,9 @@ echo ' / / _ \(_-</ __/ _ `/ / / -_) __/'
 echo '/_/_//_/___/\__/\_,_/_/_/\__/_/'
 echo " "
 
-echo "What MariaDownloader version would you like to install?
->Shell (recommended) [1]
->Python (currently under development) [2]"
+echo "What MariaDownloader version would you like to install?"
+echo ">Shell (recommended) [1]"
+echo ">Python (currently under development) [2]"
 
 read -p "1 or 2? " mdver
 
