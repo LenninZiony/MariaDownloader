@@ -9,7 +9,7 @@ echo '
 /_/_//_/___/\__/\_,_/_/_/\__/_/'
 
 echo "What MariaDownloader version would you like to install?
->Python (RECOMMENDED) [2]
+>Python (RECOMMENDED) [1]
 >Shell [2]"
 
 read -p "1 or 2? " mdver
