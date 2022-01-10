@@ -18,8 +18,8 @@ read -p "1 or 2? " mdver
 if [[ "$mdver" =~ (1|python|PYTHON) ]]
 then
   echo "Installing dependencies..."
-  sudo apt install python3 pip -y &>/dev/null
-  sudo pacman -S python3 python-pip --noconfirm &>/dev/null
+  sudo apt install python3 pip wget -y &>/dev/null
+  sudo pacman -S python3 python-pip wget --noconfirm &>/dev/null
   pip install wget &>/dev/null
   echo "All dependencies are now installed"
 
