@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
 
-import os,wget
-from wget import download
+import wget,zipfile
 
 print("""
    __  ___         _      ___                  __             __
   /  |/  /__ _____(_)__ _/ _ \___ _    _____  / /__  ___ ____/ /__ ____
  / /|_/ / _ `/ __/ / _ `/ // / _ \ |/|/ / _ \/ / _ \/ _ `/ _  / -_) __/
 /_/  /_/\_,_/_/ /_/\_,_/____/\___/__,__/_//_/_/\___/\_,_/\_,_/\__/_/
-
 """)
 
 mdurl = input("File URL: ")
@@ -17,18 +15,22 @@ mdzip = input("Unzip the file? [Y/n] ")
 
 if (mdzip == "y" or mdzip == "Y" or mdzip == "yes" or mdzip == "YES"):
 
+    mddir = input("Directory to extract: ")
     print("Mariadownloading...")
     wget.download(mdurl, mdfile)
+    print(" ")
     print("Mariadownloaded!")
 
-    print("Unzipping")
-
+    print("Unzipping...")
+    with zipfile.ZipFile(mdfile, 'r') as zip_ref:
+        zip_ref.extractall(mddir)
     print("Unzipped")
 
-    print("Saved as", mdfile)
+    print("Saved under", mddir)
 
 else:
 
-        print("Mariadownloading...")
-        wget.download(mdurl, mdfile)
-        print("Mariadownloaded!")
+    print("Mariadownloading...")
+    wget.download(mdurl, mdfile)
+    print(" ")
+    print("Mariadownloaded!")
