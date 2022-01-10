@@ -7,11 +7,12 @@ print("""
   /  |/  /__ _____(_)__ _/ _ \___ _    _____  / /__  ___ ____/ /__ ____
  / /|_/ / _ `/ __/ / _ `/ // / _ \ |/|/ / _ \/ / _ \/ _ `/ _  / -_) __/
 /_/  /_/\_,_/_/ /_/\_,_/____/\___/__,__/_//_/_/\___/\_,_/\_,_/\__/_/
+                                    by @LenninZiony and @playermushroom
 """)
 
 mdurl = input("File URL: ")
 mdfile = input("File name: ")
-mdzip = input("Unzip the file? [Y/n] ")
+mdzip = input("Unzip the file? [y/N] ")
 
 if (mdzip == "y" or mdzip == "Y" or mdzip == "yes" or mdzip == "YES"):
 
