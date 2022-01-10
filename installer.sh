@@ -6,7 +6,8 @@ echo '
    _          __       ____
   (_)__  ___ / /____ _/ / /__ ____
  / / _ \(_-</ __/ _ `/ / / -_) __/
-/_/_//_/___/\__/\_,_/_/_/\__/_/'
+/_/_//_/___/\__/\_,_/_/_/\__/_/
+'
 
 echo "What MariaDownloader version would you like to install?
 >Python (RECOMMENDED) [1]
