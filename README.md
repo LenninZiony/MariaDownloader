@@ -10,13 +10,13 @@ You can install MariaDownloader using:
 ```
 git clone https://github.com/LenninZiony/MariaDownloader &>/dev/null && chmod +x ./MariaDownloader/installer.sh && ./MariaDownloader/installer.sh
 ```
+### Curl
+```
+sh -c "$(curl -s https://raw.githubusercontent.com/LenninZiony/MariaDownloader/main/installer.sh)"
+```
 ### Wget
 ```
 sh -c "$(wget -O- https://raw.githubusercontent.com/LenninZiony/MariaDownloader/main/installer.sh)"
-```
-### Curl
-```
-sh -c "$(curl https://raw.githubusercontent.com/LenninZiony/MariaDownloader/main/installer.sh)"
 ```
 
 ![installer](https://user-images.githubusercontent.com/80495420/148483269-f35b0eba-1149-4240-9947-ce5d7f3c38f6.png)
