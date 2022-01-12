@@ -19,7 +19,7 @@ if (mdzip == "y" or mdzip == "Y" or mdzip == "yes" or mdzip == "YES"):
     mddir = input("Directory to extract: ")
     print("Mariadownloading...")
     wget.download(mdurl, mdfile)
-    print(" ")
+    print()
     print("Mariadownloaded!")
 
     print("Unzipping...")
@@ -27,11 +27,12 @@ if (mdzip == "y" or mdzip == "Y" or mdzip == "yes" or mdzip == "YES"):
         zip_ref.extractall(mddir)
     print("Unzipped")
 
-    print("Saved under", mddir)
+    print("Saved under " + mddir + "/")
 
 else:
 
     print("Mariadownloading...")
     wget.download(mdurl, mdfile)
-    print(" ")
+    print()
     print("Mariadownloaded!")
+    print("Saved as " + mdfile)
