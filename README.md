@@ -21,6 +21,8 @@ bash -c "$(wget -O- https://raw.githubusercontent.com/LenninZiony/MariaDownloade
 
 ![installer](https://user-images.githubusercontent.com/80495420/148483269-f35b0eba-1149-4240-9947-ce5d7f3c38f6.png)
 
+###### *Tested on Debian and Arch*
+
 ## Windows installation
 To install MariaDownloader on windows you will need to:
 
