@@ -20,7 +20,7 @@ then
   echo "Installing dependencies..."
   sudo apt install python3 pip wget -y &>/dev/null
   sudo pacman -S python3 python-pip wget --noconfirm &>/dev/null
-  pip install wget &>/dev/null
+  pip install readline colorama wget &>/dev/null
   echo "All dependencies are now installed"
 
   echo "Downloading MariaDownloader..."
